@@ -12,7 +12,7 @@
 
 7. Arreglar la carta para que paresca de poker (Carlos)
 
-8. Añadir instrucciones y el valor de las cartas (Cuanto vale 'k', 'q' etc) (Orlin)
+8. Añadir instrucciones y el valor de las cartas (Cuanto vale 'j', 'k', 'q' y 'A') (Orlin)
 
 9. boton para tirar 2 cartas a la vez
 
