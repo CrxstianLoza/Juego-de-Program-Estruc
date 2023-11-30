@@ -1,0 +1,16 @@
+1. Musica de fondo (Carlos)
+
+2. Efecto de carta que se de vuelta (Cristian)
+
+3. Puntuacion(Cristian)
+
+4. Jugadores (Diego)
+
+5. Boton de reset (Orlin)
+
+6. Ganador(Diego)
+
+7. Arreglar la carta para que paresca de poker (Carlos)
+
+8.Añadir instrucciones (Orlin)
+
