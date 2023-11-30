@@ -1,1 +1,1 @@
-A game about cards
+A game about cards.
