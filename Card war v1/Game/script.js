@@ -17,8 +17,11 @@ card_array = [
      selected_card = card_array[random_index]
    
      document.getElementById('card_shower').src = `./img/${selected_card}`
-   }
 
+     let audio = new Audio('./audio/picking a card.mp3');
+     audio.play()
+   }
+   document.getElementById('Button').addEventListener('click', get_random_card);
 
    card_array2 = [
      '2C.png', '2D.png', '2H.png', '2S.png', '3C.png', '3D.png',
@@ -39,4 +42,11 @@ card_array = [
      selected_card = card_array[random_index]
    
      document.getElementById('card_shower2').src = `./img/${selected_card}`
+
+     let audio = new Audio('./audio/picking a card.mp3');
+     audio.play();
    }
+
+   document.getElementById('Button2').addEventListener('click', get_random_card2);
+
+   
