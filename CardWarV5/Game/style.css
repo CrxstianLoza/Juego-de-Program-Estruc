@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+body {
+  background-image: url(./img/poker\ mesa.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Estilos del contenedor principal */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#inner_container {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 36px -22px #2B2D42;
+  margin-bottom: 33px;
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card_shower{
+  margin-right: 300px;
+}
+
+img {
+  width: 15%;
+  height: 25%;
+  border-radius: 10px;
+}
+
+#button_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  background: rgb(22, 168, 78);
+  color: rgb(255, 255, 255);
+  border-radius: 18px;
+  outline: none;
+  margin: 50px;
+}
+
+Button:hover {
+  background: #001d3c;
+}
+
+/* Estilos del flip card */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  perspective: 1000px;
+  margin-bottom: 20px; 
+}
+
+/* Estilos del contenedor interno del flip card */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+} 
+
+/* Estilos para las caras del flip card */
+.flip-card-front, 
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Estilos para las imágenes dentro del flip card */
+.flip-card-front img,
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Estilos para la clase 'flipped' */
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Estilos adicionales para la clase 'flipped' y las imágenes */
+.flip-card.flipped .flip-card-front {
+  transform: rotateY(180deg); /* Asegura que la cara frontal esté orientada correctamente */
+}
+
+.flip-card.flipped .flip-card-back {
+  transform: rotateY(0deg);
+}
+
